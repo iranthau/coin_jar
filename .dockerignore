@@ -1,0 +1,15 @@
+.DS_Store
+.git
+.gitignore
+.ruby-gemset
+.dockerignore
+.env
+/.bundle
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+.byebug_history
+Dockerfile
+docker-compose.yml
+README.md

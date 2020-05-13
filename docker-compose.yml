@@ -1,0 +1,20 @@
+version: '2'
+services:
+  db:
+    image: postgres:12.2-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=abc123
+  web:
+    build: .
+    image: coinjar:latest
+    container_name: coinjar
+    environment:
+      - RAILS_ENV=development
+      - DB_HOST=db
+      - DB_USERNAME=root
+      - DB_PASSWORD=abc123
+    command: ["rails", "s"]
+    depends_on:
+      - db
