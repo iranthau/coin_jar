@@ -16,12 +16,10 @@ module CoinJar
 
       {
         price: product_attributes[:volume_24h],
-        last: product_attributes[:last],
+        last_price: product_attributes[:last],
         bid: product_attributes[:bid],
         ask: product_attributes[:ask]
       }
-    rescue RestClient::ExceptionWithResponse => e
-      raise CoinJar::ProductDetailsFetcherError, e.response.body
     end
 
     private

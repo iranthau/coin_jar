@@ -51,7 +51,7 @@ RSpec.describe CoinJar::ProductDetailsFetcher do
       let(:product_attributes) do
         {
           price: '302.200000000',
-          last: '311.90000000',
+          last_price: '311.90000000',
           bid: '311.40000000',
           ask: '312.10000000'
         }
@@ -74,7 +74,7 @@ RSpec.describe CoinJar::ProductDetailsFetcher do
       let(:response_code) { 404 }
 
       it 'raises an error' do
-        expect { perform }.to raise_error(CoinJar::ProductDetailsFetcherError, response_body)
+        expect { perform }.to raise_error(RestClient::ExceptionWithResponse)
       end
     end
   end
