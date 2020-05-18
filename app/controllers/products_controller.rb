@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
 class ProductsController < ApplicationController
-  PRODUCTS = %w[ETHAUD BTCAUD].freeze
-
   def capture
-    PRODUCTS.each do |product|
-      product_attributes = CoinJar::ProductDetailsFetcher.new(product).perform
+    Product.all.each do |product|
+      product_prices = CoinJar::ProductDetailsFetcher.new(product.name).perform
 
-      Product.create(product_attributes.merge(name: product))
+      product.prices.create(product_prices) if product_prices.present?
     end
 
     redirect_to products_path
