@@ -19,4 +19,5 @@ end
 
 group :test do
   gem 'webmock'
+  gem 'rails-controller-testing'
 end

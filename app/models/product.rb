@@ -1,3 +1,3 @@
 class Product < ApplicationRecord
-  attribute :price, :money
+  has_many :prices
 end

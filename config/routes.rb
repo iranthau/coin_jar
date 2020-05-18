@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   get '/products/capture', to: 'products#capture'
 
-  resources :products, only: :index
+  resources :products, only: %i[index show] do
+    resources :prices, only: :index
+  end
 end

@@ -1,8 +1,17 @@
 <h1>CoinJar Products</h1>
 
-<% @products.each do |product| %>
-  <div>
-    <%= link_to "#{product.name}", root_path %>
-    <p><%= product.price %></p>
-  </div>
-<% end %>
+<%= link_to 'Capture', products_capture_path %>
+
+<table>
+  <tr>
+    <th>Product Name</th>
+    <th>Latest Price</th>
+  </tr>
+
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= link_to "#{product.name}", product_prices_path(product) %></td>
+      <td><%= product.prices.present? ? number_to_currency(product.prices.latest.price) : 'Not Available' %></td>
+    </tr>
+  <% end %>
+</table>
