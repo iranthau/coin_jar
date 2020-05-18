@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'GET /products', type: :request do
-  describe "GET /products" do
+  describe 'GET /products' do
     subject(:perform_request) { get '/products' }
 
     context 'when there are NO products' do

@@ -1,0 +1,19 @@
+<h1><%= @product.name %></h1>
+
+<table>
+  <tr>
+    <th>Price</th>
+    <th>Last Price</th>
+    <th>Bid</th>
+    <th>Ask</th>
+  </tr>
+
+  <% @prices.each do |price| %>
+    <tr>
+      <td><%= number_to_currency(price.price) %></td>
+      <td><%= number_to_currency(price.last_price) %></td>
+      <td><%= number_to_currency(price.bid) %></td>
+      <td><%= number_to_currency(price.ask) %></td>
+    </tr>
+  <% end %>
+</table>
