@@ -4,7 +4,7 @@ default: &default
   host: <%= ENV['DB_HOST'] || 'db' %>
   password: <%= ENV['DB_PASSWORD'] || 'abc123' %>
   username: <%= ENV['DB_USERNAME'] || 'root' %>
-  database: coin_jar<%= ENV['RAILS_ENV'] || 'test' %>
+  database: coin_jar_<%= ENV['RAILS_ENV'] || 'test' %>
 
 test:
   <<: *default
