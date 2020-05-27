@@ -5,6 +5,7 @@ gem 'rails'
 gem 'puma'
 gem 'pg'
 gem 'rest-client'
+gem 'active_model_serializers'
 
 group :development, :test do
   gem 'byebug'
