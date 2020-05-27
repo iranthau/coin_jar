@@ -1,5 +1,7 @@
 module Api
   class RegistrationController < Api::ApiController
+    skip_before_action :authorize_user
+
     def create
       user = User.new(user_params)
 
