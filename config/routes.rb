@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   namespace :api do
+    resource :registration, only: :create, controller: :registration
     resources :products, only: %i[index create]
   end
 end
