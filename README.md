@@ -56,3 +56,10 @@ docker-compose run -v $(pwd)/:/coin_jar --rm web bash
 RAILS_ENV=test rails db:create && rails db:migrate
 RAILS_ENV=test rspec spec/
 ```
+
+### API endpoints
+
+Import CoinjarApi.postman_collection.json to Postman to use the API.
+
+Obtain a token using the registration endpoint.
+Use that token as a Bearer token to call other endpoints.

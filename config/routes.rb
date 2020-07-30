@@ -6,4 +6,9 @@ Rails.application.routes.draw do
   resources :products, only: %i[index show] do
     resources :prices, only: :index
   end
+
+  namespace :api do
+    resource :registration, only: :create, controller: :registration
+    resources :products, only: %i[index create]
+  end
 end

@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "22eea555-00e0-4ae7-837c-f4b938b2f73b",
+		"name": "CoinjarApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NH0.L5Y7mrgk889TuOULvKdftBm0rd8MBNHy7SN4KhMC9To",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3000/api/products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"971d6194372b5e8fa10847f8db30710c\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "d95db7b8-6e3f-4943-8476-f0ec63f28c4f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.090915"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"products\": {\n        \"ETHAUD\": \"222.4\",\n        \"BTCAUD\": \"74.76\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/api/registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": {\n\t\t\"username\": \"test123\",\n\t\t\"password\": \"123456\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/registration",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registration"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3000/api/registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\": {\n\t\t\"username\": \"test123\",\n\t\t\"password\": \"123456\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"registration"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"451a8190ba5f1d0d9273b70bf82096e4\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "4216c06b-c14e-4912-aaa4-6482c305717a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.651953"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NH0.L5Y7mrgk889TuOULvKdftBm0rd8MBNHy7SN4KhMC9To\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3000/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NH0.L5Y7mrgk889TuOULvKdftBm0rd8MBNHy7SN4KhMC9To",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3000/api/products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7fb37db641f1b88caf7881795d7602d7\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "1e85d124-1380-4f7e-af39-f9802c0d3a3e"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.631459"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"products\": [\n        {\n            \"id\": 1,\n            \"name\": \"ETHAUD\",\n            \"prices\": [\n                {\n                    \"id\": 1,\n                    \"price\": \"210.6\",\n                    \"last_price\": \"307.9\",\n                    \"bid\": \"305.2\",\n                    \"ask\": \"308.9\",\n                    \"product_id\": 1\n                },\n                {\n                    \"id\": 3,\n                    \"price\": \"222.4\",\n                    \"last_price\": \"314.9\",\n                    \"bid\": \"313.1\",\n                    \"ask\": \"315.1\",\n                    \"product_id\": 1\n                },\n                {\n                    \"id\": 5,\n                    \"price\": \"222.4\",\n                    \"last_price\": \"314.9\",\n                    \"bid\": \"312.8\",\n                    \"ask\": \"315.1\",\n                    \"product_id\": 1\n                },\n                {\n                    \"id\": 7,\n                    \"price\": \"222.4\",\n                    \"last_price\": \"314.9\",\n                    \"bid\": \"312.8\",\n                    \"ask\": \"315.1\",\n                    \"product_id\": 1\n                },\n                {\n                    \"id\": 9,\n                    \"price\": \"222.4\",\n                    \"last_price\": \"314.9\",\n                    \"bid\": \"312.8\",\n                    \"ask\": \"315.1\",\n                    \"product_id\": 1\n                },\n                {\n                    \"id\": 11,\n                    \"price\": \"222.4\",\n                    \"last_price\": \"314.9\",\n                    \"bid\": \"312.6\",\n                    \"ask\": \"315.1\",\n                    \"product_id\": 1\n                },\n                {\n                    \"id\": 13,\n                    \"price\": \"222.6\",\n                    \"last_price\": \"315.1\",\n                    \"bid\": \"313.4\",\n                    \"ask\": \"315.2\",\n                    \"product_id\": 1\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"BTCAUD\",\n            \"prices\": [\n                {\n                    \"id\": 2,\n                    \"price\": \"71.79\",\n                    \"last_price\": \"13370.0\",\n                    \"bid\": \"13360.0\",\n                    \"ask\": \"13420.0\",\n                    \"product_id\": 2\n                },\n                {\n                    \"id\": 4,\n                    \"price\": \"75.08\",\n                    \"last_price\": \"13910.0\",\n                    \"bid\": \"13990.0\",\n                    \"ask\": \"14030.0\",\n                    \"product_id\": 2\n                },\n                {\n                    \"id\": 6,\n                    \"price\": \"74.76\",\n                    \"last_price\": \"13910.0\",\n                    \"bid\": \"13990.0\",\n                    \"ask\": \"14000.0\",\n                    \"product_id\": 2\n                },\n                {\n                    \"id\": 8,\n                    \"price\": \"74.76\",\n                    \"last_price\": \"13910.0\",\n                    \"bid\": \"13990.0\",\n                    \"ask\": \"14030.0\",\n                    \"product_id\": 2\n                },\n                {\n                    \"id\": 10,\n                    \"price\": \"74.76\",\n                    \"last_price\": \"13910.0\",\n                    \"bid\": \"13990.0\",\n                    \"ask\": \"14020.0\",\n                    \"product_id\": 2\n                },\n                {\n                    \"id\": 12,\n                    \"price\": \"74.76\",\n                    \"last_price\": \"13910.0\",\n                    \"bid\": \"13990.0\",\n                    \"ask\": \"14000.0\",\n                    \"product_id\": 2\n                },\n                {\n                    \"id\": 14,\n                    \"price\": \"75.01\",\n                    \"last_price\": \"14040.0\",\n                    \"bid\": \"13980.0\",\n                    \"ask\": \"14030.0\",\n                    \"product_id\": 2\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
